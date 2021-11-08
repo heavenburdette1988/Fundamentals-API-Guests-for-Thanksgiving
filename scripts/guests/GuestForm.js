@@ -7,7 +7,7 @@ const contentTarget = document.querySelector(".guestFormContainer")
 document.querySelector("body").addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "saveGuest"){
 
-        const newGuest ={
+        const newGuest = {
 
             name: document.querySelector("#guestName").value,
             age: document.querySelector("#guestAge").value,
