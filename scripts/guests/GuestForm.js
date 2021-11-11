@@ -21,27 +21,15 @@ document.querySelector("body").addEventListener("click", clickEvent => {
         document.querySelector("#guestName").value ="",
         document.querySelector("#guestAge").value ="",
         document.querySelector("#favoriteDish").value ="",
-        document.querySelectorAll("#rightHand").value="",
+        document.querySelector("#rightHand").value="",
+        //need to fix rightHand to unchecked
         document.querySelector("#image").value =""
-
+            // ^^ resets form to empty string
         saveGuest(newGuest)
         .then(GuestList)
     }
 })
 
-// function myFunction() {
-//     // Get the checkbox
-//     var checkBox = document.getElementById("rightHand");
-//     // Get the output text
-//     var text = document.getElementById("text");
-  
-//     // If the checkbox is checked, display the output text
-//     if (checkBox.checked == true){
-//       text.style.display = "block";
-//     } else {
-//       text.style.display = "none";
-//     }
-//   }
 
 contentTarget.addEventListener("click", e => {
     if(e.target.id === "rightHand"){
@@ -65,9 +53,3 @@ export const guestForm = () => {
         <button id="saveGuest">Add Guest</button>`
 }
 
-// //  "id": 1,
-// "name": "John Stamos",
-// "age": 58,
-// "favoriteDish": "Sweet Potatoes" ,
-// "rightHanded": true,
-// "imageUrl":

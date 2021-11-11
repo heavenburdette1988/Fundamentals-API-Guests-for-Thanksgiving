@@ -1,4 +1,4 @@
-import { menuSelect } from "../menus/MenuSelect.js";
+// import { menuSelect } from "../menus/MenuSelect.js";
 import { guests } from "./Guest.js";
 import { getGuests, useGuests } from "./GuestProvider.js";
 
@@ -12,7 +12,7 @@ export const GuestList = (menuSelected, taco) => {
         let guestsArray = useGuests();
 
         let guestHTML = "";
-        console.log(taco)
+        // console.log(taco)
         if(menuSelected === "dish") {
             guestsArray = guestsArray.filter(menuObj =>{
                 return menuObj.favoriteDish === taco
